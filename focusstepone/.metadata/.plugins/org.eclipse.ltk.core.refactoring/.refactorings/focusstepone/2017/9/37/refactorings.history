@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;focus.focusstepone.tools&apos; to &apos;focus.focusstepone.utils&apos;&#x0D;&#x0A;- Original project: &apos;focusstepone&apos;&#x0D;&#x0A;- Original element: &apos;focusstepone/src/main/java/focus.focusstepone.tools&apos;&#x0D;&#x0A;- Renamed element: &apos;focusstepone/src/main/java/focus.focusstepone.utils&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;focus.focusstepone.tools&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;focus.focusstepone.tools" name="focus.focusstepone.utils" qualified="false" references="true" stamp="1505096663706" textual="false" version="1.0"/>
+</session>
