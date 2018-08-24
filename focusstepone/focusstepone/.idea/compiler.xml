@@ -9,8 +9,8 @@
         <module name="focusstepone" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="focusstepone" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="focusstepone" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
