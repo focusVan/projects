@@ -5,7 +5,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 /**
  * focus Create in 17:28 2018/8/21
  */
-public class EqualsDemo {
+public class EqualsTest {
     private String name;
 
     public String getName() {
@@ -19,7 +19,7 @@ public class EqualsDemo {
     @Override
     public boolean equals(Object obj) {
         if (obj != null && obj.getClass() == this.getClass()) {
-            EqualsDemo demo = (EqualsDemo)obj;
+            EqualsTest demo = (EqualsTest)obj;
             if (demo.getName() == null || name == null) {
                 return false;
             } else {
