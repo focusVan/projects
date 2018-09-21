@@ -1,0 +1,1 @@
+__all__ = ["child_pack2_module2"]
