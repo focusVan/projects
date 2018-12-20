@@ -46,7 +46,7 @@ public class AvroTest {
 
     }
 
-    private byte[] getAvroBytes(SpecificRecordBase recordBase) throws IOException {
+    public static byte[] getAvroBytes(SpecificRecordBase recordBase) throws IOException {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         SpecificDatumWriter specificDatumWriter = new SpecificDatumWriter(recordBase.getSchema());
         Encoder encoder = EncoderFactory.get().binaryEncoder(byteArrayOutputStream, null);

@@ -14,7 +14,7 @@ public class ConsumerDemo {
     public static void main(String[] args) {
 
         Properties properties = new Properties();
-        properties.put("bootstrap.servers", "192.168.11.131:9092");
+        properties.put("bootstrap.servers", "192.168.11.129:9092");
         properties.put("group.id", "group-1");
         properties.put("enable.auto.commit", "true");
         properties.put("auto.commit.interval.ms", "1000");
@@ -27,9 +27,9 @@ public class ConsumerDemo {
         consumer.subscribe(Arrays.asList("test"));
 
         while (true) {
-            ConsumerRecords<String, String> records = consumer.poll(100);
+            ConsumerRecords<String, String> records = consumer.poll(1);
             for (ConsumerRecord<String, String> record : records) {
-                System.out.printf("offset = %d, value = %s", record.offset(), record.value());
+                System.out.printf("offset = %d, key = %s, value = %s", record.offset(), record.key(), record.value());
                 System.out.println();
             }
         }

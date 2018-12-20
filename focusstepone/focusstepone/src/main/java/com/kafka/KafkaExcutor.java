@@ -34,7 +34,9 @@ public class KafkaExcutor implements Runnable{
                     Iterator<KafkaMessage> iterator = messageQueue.iterator();
                     while (iterator.hasNext()) {
                         final KafkaMessage kafkaMessage = iterator.next();
-                        this.producer.send(new ProducerRecord<String, byte[]>(kafkaMessage.getTopic(), kafkaMessage.getKey(), kafkaMessage.getMessage()));
+                        ProducerRecord<String, byte[]> record = new ProducerRecord<String, byte[]>(kafkaMessage.getTopic(), kafkaMessage.getKey(), kafkaMessage.getMessage());
+                        this.producer.send(record);
+                        System.out.println("finish");
                     }
                 } else {
                     Thread.sleep(10L);

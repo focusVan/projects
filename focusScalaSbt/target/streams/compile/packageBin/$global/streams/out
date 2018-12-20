@@ -1,0 +1,27 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\focusscalasbt_2.12-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	focus\Pet.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\classes\focus\Pet.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	focus\IntIterator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\classes\focus\IntIterator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	focus\SimpleApp$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\classes\focus\SimpleApp$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	focus[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\classes\focus[0m
+[0m[[0m[0mdebug[0m] [0m[0m	focus\User.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\classes\focus\User.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	focus\Dog.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\classes\focus\Dog.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	focus\Iterator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\classes\focus\Iterator.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	focus\Factorial.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\classes\focus\Factorial.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	focus\SimpleApp.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\classes\focus\SimpleApp.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	focus\User$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\classes\focus\User$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	focus\Point.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\classes\focus\Point.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	focus\Cat.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\focus\myproject\projects\focusScalaSbt\target\scala-2.12\classes\focus\Cat.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

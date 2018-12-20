@@ -1,7 +1,5 @@
 package com.kafka;
 
-import org.apache.spark.Partitioner;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
@@ -34,11 +32,20 @@ public class KafkaProducer {
         return this.sendMessage(topic, Long.toString(System.currentTimeMillis()), message);
     }
 
+    public List<KafkaMessage> getMessageQueue() {
+        List<KafkaMessage> queue = null;
+        synchronized(this) {
+            queue = this.messageQueue;
+            this.messageQueue = new LinkedList();
+            return queue;
+        }
+    }
+
     public boolean sendMessage(String topic, String key, byte[] message) {
         try {
             synchronized (this) {
                 if (this.messageQueue != null) {
-                    this.messageQueue.add(new KafkaMessage(key, topic, message));
+                    this.messageQueue.add(new KafkaMessage(topic, key, message));
                     return true;
                 } else {
                     return false;
@@ -48,10 +55,6 @@ public class KafkaProducer {
             System.err.println(e);
             return false;
         }
-    }
-
-    public List<KafkaMessage> getMessageQueue() {
-        return messageQueue;
     }
 
     public void setMessageQueue(List<KafkaMessage> messageQueue) {
