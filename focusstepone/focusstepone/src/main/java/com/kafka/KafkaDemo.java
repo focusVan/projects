@@ -13,6 +13,8 @@ public class KafkaDemo {
         KafkaProducer kafkaProducer = new KafkaProducer("192.168.11.129:9092,192.168.11.130:9092,192.168.11.131:9092", 8);
         kafkaProducer.start();
 
+        KafkaDemo demo = new KafkaDemo();
+
         User.Builder user1 = User.newBuilder().setName("cloud").setFavoriteNumber(13).setFavoriteColor("white");
         User user2 = User.newBuilder().setName("focus").setFavoriteNumber(5).setFavoriteColor("black").build();
         User user3 = new User("name", 5, "color");
