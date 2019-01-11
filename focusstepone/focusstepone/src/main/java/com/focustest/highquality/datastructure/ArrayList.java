@@ -1,4 +1,4 @@
-package com.focustest.highquality;
+package com.focustest.highquality.datastructure;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,5 +1,8 @@
 package com.focustest.highquality;
 
+import com.focustest.highquality.datastructure.ArrayList;
+import com.focustest.highquality.datastructure.LinkedList;
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
@@ -25,9 +28,8 @@ public class ReportCreator {
 //            } catch (Exception e) {
 //                e.printStackTrace();
 //            }
-            List list = new ArrayList();
-            list = new LinkedList();
-            list = new Vector();
+//            List list = new ArrayList();
+//            list = new Vector();
 
             String fileNameStart = ReportCreator.class.getClassLoader().getResource("campaign-start.txt").getPath();
             start = new BufferedReader(new InputStreamReader(new FileInputStream(fileNameStart)));

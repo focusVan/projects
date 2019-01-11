@@ -24,5 +24,7 @@ public class ArrayAsListTest {
 
         Arrays.sort(arrayInteger);
         System.out.println(arrayInteger[0]);
+        System.out.println((2 << 8 - 1) - 1);
+        System.out.println(Math.pow(2, 8) - 1);
     }
 }

@@ -1,4 +1,4 @@
-package com.focustest.highquality;
+package com.focustest.highquality.datastructure;
 
 /**
  * focus Create in 14:54 2018/12/29
