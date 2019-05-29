@@ -1,5 +1,7 @@
 package com.utils;
 
+import org.apache.commons.codec.digest.DigestUtils;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -31,8 +33,21 @@ public class StringUtils {
 			if (hexString.length() == 1) {
 				hex = '0' + hex;
 			}
-			hexString.append(hex.toUpperCase());
+			hexString.append(hex);
 		}
-		return hexString.toString().substring(8,24);
+		return hexString.toString();
+	}
+
+	public static void main(String[] args) {
+		/*String ua = "HUAWEI MLA-AL10,M5S,REDMI NOTE 4X,HUAWEI TIT-CL10,MI MAX,SAMSUNG-SM-G925A,SM-G925P,VIVO X5MAX+,SM-G9250,SM-G925V,COOLPAD 8690,SM-G925F,MI MAX（32G),VIVO S7I(T),REDMI NOTE3双网通,NOKIA 3.1 PLUS,SM-G925S,SM-G925L,SM-G925I,SM-G928S,SM-G925K,SM-G925T";
+		String[] array = ua.split(",");
+		for (String temp : array) {
+			System.out.println(getStrMD5(temp));
+		}*/
+
+		String tempUa = DigestUtils.md5Hex("VIVO X5MAX+");
+		System.out.println(tempUa);
+
+
 	}
 }
